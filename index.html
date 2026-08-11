@@ -1,871 +1,766 @@
-
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="IT/Web業界特化のGreen媒体運用代行サービス。業界初の面談課金モデル（1面談=2万円）で初期費用・固定費ゼロ。採用業務を効率化し、本質的な業務に集中できます。">
-    <title>Green運用代行 | 業界初の面談課金モデル - IT/Web採用を効率化</title>
-    
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
-    
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Green運用代行｜業界初の面談課金モデル｜株式会社エージェントベスト</title>
+<meta name="description" content="IT/Web業界特化の求人媒体「Green」の運用代行サービス。業界初の面談課金モデル（1面談2万円）で初期費用・月額固定費ゼロ。求人作成から面接調整まで完全代行します。">
+<link rel="canonical" href="https://green.agent-best.net/">
+<meta name="robots" content="index,follow">
+<meta name="theme-color" content="#0C2119">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="株式会社エージェントベスト">
+<meta property="og:title" content="Green運用代行｜業界初の面談課金モデル｜株式会社エージェントベスト">
+<meta property="og:description" content="1面談2万円の完全成功報酬。初期費用・月額固定費ゼロで、IT/Web採用の実務をまるごと代行します。">
+<meta property="og:url" content="https://green.agent-best.net/">
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230C2119'/%3E%3Ctext x='16' y='21' font-family='Helvetica,Arial,sans-serif' font-size='13' font-weight='bold' fill='%23fff' text-anchor='middle'%3EAB%3C/text%3E%3C/svg%3E">
+<style>
+  :root{
+    --paper:#F3F7F4;--surface:#FFFFFF;--surface-2:#E7F0EA;
+    --ink:#0E1B14;--ink-soft:#47594E;--ink-faint:#82918A;
+    --line:#DEE9E2;--line-strong:#C6D6CC;
+    --accent:#12A150;--accent-strong:#0E8A44;--accent-ink:#0A6C36;--accent-tint:#DCF3E6;
+    --warn:#C2410C;--warn-tint:#FCE9DF;
+    --navy:#0C2119;--on-navy:#E9F2EC;--on-navy-soft:#9BB3A5;--on-navy-line:#22392C;
+    --sans:"Hiragino Kaku Gothic ProN","Hiragino Sans","Yu Gothic",YuGothic,"Noto Sans JP","Segoe UI",sans-serif;
+    --mono:"SFMono-Regular","SF Mono","Cascadia Code",Consolas,"Roboto Mono",monospace;
+    --maxw:1080px;--radius:16px;
+    --shadow:0 1px 2px rgba(14,27,20,.05),0 16px 38px -20px rgba(14,27,20,.26);
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);line-height:1.75;
+    -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;overflow-x:hidden}
+  h1,h2,h3,h4,p{margin:0}
+  a{color:inherit;text-decoration:none}
+  img,svg{max-width:100%}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 22px}
+  .mono{font-family:var(--mono);font-variant-numeric:tabular-nums}
+  :focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px}
+
+  .btn{display:inline-flex;align-items:center;gap:9px;font-weight:800;font-size:.95rem;padding:14px 26px;border-radius:11px;
+    cursor:pointer;border:1px solid transparent;transition:transform .15s ease,background .2s ease,box-shadow .2s ease;
+    white-space:nowrap;font-family:inherit}
+  .btn-primary{background:var(--accent);color:#fff;box-shadow:0 10px 26px -10px var(--accent)}
+  .btn-primary:hover{background:var(--accent-strong);transform:translateY(-2px)}
+  .btn-ghost{border-color:var(--line-strong);color:var(--ink);background:var(--surface)}
+  .btn-ghost:hover{border-color:var(--accent);color:var(--accent-ink)}
+  .btn-lg{padding:17px 34px;font-size:1.02rem}
+  .btn .arw{font-family:var(--mono)}
+
+  header.nav{position:sticky;top:0;z-index:50;background:rgba(243,247,244,.9);
+    backdrop-filter:saturate(1.4) blur(12px);border-bottom:1px solid var(--line)}
+  .nav-in{display:flex;align-items:center;justify-content:space-between;height:64px;gap:16px}
+  .brand{display:flex;align-items:center;gap:11px;font-weight:800}
+  .brand .mk{width:30px;height:30px;border-radius:8px;flex:none;background:linear-gradient(145deg,var(--accent),var(--navy));
+    display:grid;place-items:center;color:#fff;font-family:var(--mono);font-size:.82rem;font-weight:700}
+  .brand .nm{font-size:.98rem;line-height:1.2}
+  .brand .nm small{display:block;font-family:var(--mono);font-size:.56rem;letter-spacing:.12em;color:var(--ink-faint);font-weight:600}
+  .nav-links{display:flex;gap:22px;margin-left:auto;margin-right:6px}
+  .nav-links a{font-size:.88rem;font-weight:700;color:var(--ink-soft)}
+  .nav-links a:hover{color:var(--accent-ink)}
+  .nav .cta-mini{font-size:.9rem;padding:10px 20px}
+  @media (max-width:900px){.nav-links{display:none}}
+  @media (max-width:560px){.brand .nm .full{display:none}}
+
+  .hero{position:relative;background:var(--navy);color:var(--on-navy);overflow:hidden;border-bottom:1px solid var(--on-navy-line)}
+  .hero::before{content:"";position:absolute;inset:0;pointer-events:none;
+    background:radial-gradient(48% 44% at 86% 6%,rgba(18,161,80,.34),transparent 62%),
+      radial-gradient(42% 42% at 6% 96%,rgba(13,126,147,.22),transparent 64%)}
+  .hero-grid{position:absolute;inset:0;opacity:.5;pointer-events:none;
+    background-image:linear-gradient(var(--on-navy-line) 1px,transparent 1px);background-size:100% 48px;
+    -webkit-mask-image:linear-gradient(180deg,transparent,#000 16%,#000 74%,transparent);
+            mask-image:linear-gradient(180deg,transparent,#000 16%,#000 74%,transparent)}
+  .hero-in{position:relative;padding:66px 0 54px}
+  .hero-eyebrow{display:inline-flex;align-items:center;gap:9px;font-family:var(--mono);font-size:.72rem;letter-spacing:.1em;
+    color:var(--on-navy);font-weight:700;background:rgba(255,255,255,.08);
+    border:1px solid var(--on-navy-line);padding:7px 14px;border-radius:999px}
+  h1.hero-title{font-weight:900;font-size:clamp(2rem,5.4vw,3.5rem);line-height:1.3;margin:22px 0 0;text-wrap:balance}
+  h1.hero-title .hl{color:#5FD693}
+  .hero-lead{margin:22px 0 0;max-width:38em;color:var(--on-navy-soft);font-size:1.05rem}
+  .hero-price{display:inline-flex;align-items:center;gap:22px;flex-wrap:wrap;margin-top:30px;padding:20px 26px;
+    background:rgba(255,255,255,.05);border:1px solid var(--on-navy-line);border-radius:16px}
+  .hero-price .amt{font-family:var(--mono);font-weight:800;line-height:1;font-variant-numeric:tabular-nums}
+  .hero-price .amt .lb{display:block;font-size:.7rem;letter-spacing:.12em;color:var(--on-navy-soft);margin-bottom:8px;font-weight:700}
+  .hero-price .amt .v{font-size:2.4rem;color:#5FD693}
+  .hero-price .amt .v small{font-size:.4em;margin-left:4px}
+  .hero-price ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:6px;font-size:.86rem;color:var(--on-navy-soft)}
+  .hero-price ul li::before{content:"✓ ";color:#5FD693;font-weight:900}
+  .hero-cta{display:flex;flex-wrap:wrap;gap:14px;margin:30px 0 0;align-items:center}
+  .hero-cta .note{font-family:var(--mono);font-size:.72rem;color:var(--on-navy-soft)}
+  .hero-trust{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:40px 0 0}
+  .htile{background:rgba(255,255,255,.04);border:1px solid var(--on-navy-line);border-radius:13px;padding:18px}
+  .htile .n{font-family:var(--mono);font-weight:800;font-size:1.6rem;line-height:1;font-variant-numeric:tabular-nums}
+  .htile .l{font-size:.76rem;color:var(--on-navy-soft);margin-top:8px}
+  @media (max-width:640px){.hero-trust{grid-template-columns:1fr}}
+
+  section{padding:78px 0}
+  .band{background:var(--surface-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .sec-head{display:flex;flex-direction:column;gap:12px;margin-bottom:42px;max-width:46em}
+  .sec-head .kick{font-family:var(--mono);font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;color:var(--accent-ink);font-weight:600}
+  .sec-head.center{margin:0 auto 44px;text-align:center;align-items:center}
+  h2{font-weight:900;font-size:clamp(1.6rem,3.6vw,2.4rem);line-height:1.34;text-wrap:balance}
+  .sec-head p{color:var(--ink-soft);font-size:1.02rem}
+
+  .card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:26px;box-shadow:var(--shadow)}
+  .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+  .grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+  @media (max-width:900px){.grid4{grid-template-columns:1fr 1fr}}
+  @media (max-width:820px){.grid3{grid-template-columns:1fr}.grid2{grid-template-columns:1fr}}
+  .card .no{font-family:var(--mono);font-size:.68rem;letter-spacing:.14em;color:var(--accent-ink);font-weight:700}
+  .card .ico{width:44px;height:44px;border-radius:11px;background:var(--accent-tint);color:var(--accent-ink);
+    display:grid;place-items:center;margin-bottom:16px}
+  .card h4{font-size:1.1rem;font-weight:800;margin-bottom:8px}
+  .card p{color:var(--ink-soft);font-size:.94rem}
+
+  .old .ico{background:var(--warn-tint);color:var(--warn)}
+  .old .amt{font-family:var(--mono);font-weight:800;font-size:1.4rem;color:var(--warn);margin:6px 0 14px}
+  .old ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:9px;font-size:.9rem;color:var(--ink-soft)}
+  .old ul li::before{content:"×";color:var(--warn);font-weight:900;margin-right:8px}
+  .down{text-align:center;margin-top:30px;color:var(--accent-ink);font-weight:800}
+  .down .ar{display:block;font-size:1.6rem;line-height:1}
+
+  .ilist{list-style:none;margin:14px 0 0;padding:0;display:flex;flex-direction:column;gap:10px}
+  .ilist li{display:flex;gap:10px;font-size:.94rem;color:var(--ink-soft)}
+  .ilist li .ck{width:20px;height:20px;border-radius:50%;background:var(--accent-tint);color:var(--accent-ink);
+    flex:none;display:grid;place-items:center;font-size:.66rem;font-weight:900;margin-top:3px}
+
+  .pricecard{background:var(--surface);border:1px solid var(--accent);border-radius:20px;overflow:hidden;
+    box-shadow:0 1px 2px rgba(14,27,20,.05),0 22px 44px -22px var(--accent)}
+  .pricecard .top{background:var(--navy);color:var(--on-navy);padding:32px;text-align:center;position:relative;overflow:hidden}
+  .pricecard .top::before{content:"";position:absolute;inset:0;background:radial-gradient(60% 90% at 50% 0%,rgba(18,161,80,.28),transparent 60%)}
+  .pricecard .top>*{position:relative}
+  .pricecard .top .lbl{font-family:var(--mono);font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:#5FD693}
+  .pricecard .top .amt{font-family:var(--mono);font-weight:800;font-size:clamp(2.4rem,6vw,3.4rem);line-height:1;margin-top:10px;font-variant-numeric:tabular-nums}
+  .pricecard .top .amt small{font-size:.3em;font-weight:700;margin-left:6px}
+  .pricecard .top .cap{color:var(--on-navy-soft);font-size:.88rem;margin-top:10px}
+  .pricecard .body{padding:30px 32px}
+  .pricecard .note{margin-top:20px;padding:14px 16px;background:var(--surface-2);border-radius:12px;font-size:.84rem;color:var(--ink-soft)}
+
+  .tbl-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;border:1px solid var(--line);border-radius:var(--radius);background:var(--surface);box-shadow:var(--shadow)}
+  table.sim{width:100%;border-collapse:collapse;min-width:680px}
+  table.sim th,table.sim td{padding:15px 16px;text-align:right;border-bottom:1px solid var(--line);font-size:.92rem;
+    font-family:var(--mono);font-variant-numeric:tabular-nums}
+  table.sim th:first-child,table.sim td:first-child{text-align:left;font-family:var(--sans)}
+  table.sim thead th{background:var(--navy);color:var(--on-navy);font-size:.8rem;font-weight:800;border-bottom:0;text-align:right}
+  table.sim thead th:first-child{text-align:left}
+  table.sim td small{display:block;font-size:.72rem;color:var(--ink-faint)}
+  table.sim tbody tr.ours{background:var(--accent-tint)}
+  table.sim tbody tr.ours td{color:var(--accent-ink);font-weight:800}
+  table.sim tbody tr:last-child td{border-bottom:0}
+  .saving{margin-top:18px;background:var(--accent-tint);border:1px solid var(--accent);border-radius:14px;padding:20px 24px}
+  .saving b{display:block;font-size:1.15rem;font-weight:900;color:var(--accent-ink)}
+  .saving p{font-size:.9rem;color:var(--ink-soft);margin-top:4px}
+
+  .steps{display:flex;flex-direction:column;gap:14px}
+  .step{display:grid;grid-template-columns:auto 1fr;gap:20px;align-items:flex-start;background:var(--surface);
+    border:1px solid var(--line);border-radius:var(--radius);padding:24px 28px;box-shadow:var(--shadow)}
+  .step .no{width:44px;height:44px;border-radius:12px;flex:none;background:var(--navy);color:#fff;display:grid;place-items:center;
+    font-family:var(--mono);font-weight:800}
+  .step:nth-child(1) .no{background:var(--accent)}
+  .step h4{font-size:1.08rem;font-weight:800;margin-bottom:6px}
+  .step p{color:var(--ink-soft);font-size:.94rem}
+  .step .tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+  .step .tags span{font-size:.76rem;background:var(--surface-2);border:1px solid var(--line);border-radius:999px;padding:4px 12px;color:var(--ink-soft)}
+
+  details.faq{background:var(--surface);border:1px solid var(--line);border-radius:12px;margin-bottom:10px;overflow:hidden}
+  details.faq summary{cursor:pointer;list-style:none;padding:18px 22px;font-weight:800;font-size:.98rem;display:flex;
+    align-items:flex-start;gap:12px}
+  details.faq summary::-webkit-details-marker{display:none}
+  details.faq summary::after{content:"+";margin-left:auto;font-family:var(--mono);font-weight:800;color:var(--accent);font-size:1.2rem;line-height:1.4}
+  details.faq[open] summary::after{content:"−"}
+  details.faq summary .q{color:var(--accent);font-family:var(--mono);font-weight:800}
+  details.faq .a{padding:0 22px 20px 52px;color:var(--ink-soft);font-size:.94rem}
+
+  .final{position:relative;overflow:hidden;background:var(--navy);color:var(--on-navy);border-radius:22px;padding:52px 40px;text-align:center}
+  .final::before{content:"";position:absolute;inset:0;background:
+    radial-gradient(46% 80% at 18% 6%,rgba(18,161,80,.3),transparent 60%),
+    radial-gradient(46% 80% at 86% 94%,rgba(13,126,147,.22),transparent 60%)}
+  .final>*{position:relative}
+  .final .lbl{font-family:var(--mono);font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:#5FD693}
+  .final h2{margin-top:14px}
+  .final p{color:var(--on-navy-soft);margin:16px auto 0;max-width:34em}
+
+  .formcard{max-width:640px;margin:30px auto 0;background:var(--surface);border:1px solid var(--line);border-radius:18px;
+    padding:clamp(24px,4vw,40px);box-shadow:var(--shadow);text-align:left;color:var(--ink)}
+  .field{margin-bottom:18px}
+  .field label{display:block;font-size:.86rem;font-weight:800;letter-spacing:.03em;margin-bottom:7px}
+  .req{font-size:.64rem;font-weight:700;color:var(--accent-ink);border:1px solid var(--accent);border-radius:999px;
+    padding:.1em .7em;margin-left:.5em;letter-spacing:.08em;vertical-align:1px}
+  .field input,.field textarea{width:100%;font-family:inherit;font-size:1rem;color:var(--ink);background:var(--paper);
+    border:1px solid var(--line-strong);border-radius:10px;padding:.8em 1em;transition:border-color .2s,box-shadow .2s}
+  .field textarea{resize:vertical;line-height:1.8}
+  .field input:focus,.field textarea:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-tint)}
+  .form-error{color:#B23B3B;font-size:.86rem;min-height:1.2em;margin-bottom:.4rem}
+  .submit-btn{width:100%;justify-content:center;font-size:1rem;padding-block:1.05em}
+  .submit-btn:disabled{opacity:.6;cursor:default;transform:none}
+  .privacy-note{margin-top:14px;font-size:.75rem;color:var(--ink-faint);text-align:center}
+  .thanks{text-align:center;padding:16px 0}
+  .thanks-mark{width:46px;height:46px;border-radius:50%;border:2px solid var(--accent);display:inline-block;position:relative}
+  .thanks-mark::after{content:"";position:absolute;left:15px;top:8px;width:12px;height:21px;
+    border-right:2px solid var(--accent);border-bottom:2px solid var(--accent);transform:rotate(40deg)}
+  .thanks h3{font-size:1.3rem;font-weight:900;margin-top:16px}
+  .thanks p{color:var(--ink-soft);margin-top:10px;font-size:.94rem}
+  .thanks .sched{margin-top:22px;padding-top:18px;border-top:1px solid var(--line);font-size:.9rem;color:var(--ink-soft)}
+  .thanks .sched a{color:var(--accent-ink);font-weight:800;text-decoration:underline;text-underline-offset:3px}
+
+  footer.ft{border-top:1px solid var(--line);padding:40px 0;color:var(--ink-faint);font-size:.82rem;background:var(--surface)}
+  .ft-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:28px;padding-bottom:24px;border-bottom:1px solid var(--line)}
+  @media (max-width:760px){.ft-grid{grid-template-columns:1fr}}
+  .ft-grid h5{font-size:.82rem;font-weight:800;color:var(--ink);margin:0 0 10px}
+  .ft-grid ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px}
+  .ft-grid a{color:var(--ink-soft);font-weight:600}
+  .ft-grid a:hover{color:var(--accent-ink)}
+  .ft-base{padding-top:20px;line-height:1.9}
+
+  .rv{opacity:0;transform:translateY(16px);transition:opacity .7s ease,transform .7s ease}
+  .rv.in{opacity:1;transform:none}
+  @media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+</style>
+<noscript><style>.rv{opacity:1;transform:none}</style></noscript>
 </head>
 <body>
-    <!-- Header / Navigation -->
-    <header class="header">
-        <div class="container">
-            <nav class="nav">
-                <div class="logo">
-                    <i class="fas fa-leaf"></i>
-                    <span>Green運用代行</span>
-                </div>
-                <ul class="nav-menu">
-                    <li><a href="#service">サービス</a></li>
-                    <li><a href="#features">特徴</a></li>
-                    <li><a href="#pricing">料金</a></li>
-                    <li><a href="#flow">導入の流れ</a></li>
-                    <li><a href="#faq">FAQ</a></li>
-                </ul>
-                <a href="#contact" class="btn btn-primary btn-header">無料相談</a>
-                <button class="hamburger" aria-label="メニュー">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-            </nav>
+
+<header class="nav">
+  <div class="wrap nav-in">
+    <a class="brand" href="#top" aria-label="Green運用代行 株式会社エージェントベスト">
+      <span class="mk">AB</span>
+      <span class="nm"><span class="full">Green運用代行</span><small>AGENT BEST INC.</small></span>
+    </a>
+    <nav class="nav-links">
+      <a href="#service">サービス</a>
+      <a href="#why">選ばれる理由</a>
+      <a href="#price">料金</a>
+      <a href="#flow">導入の流れ</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <a href="#contact" class="btn btn-primary cta-mini">お問い合わせ</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-grid"></div>
+    <div class="wrap hero-in">
+      <span class="hero-eyebrow">採用ご担当者さま向け ／ IT・Web業界特化 ／ Green運用代行</span>
+      <h1 class="hero-title">採用の<span class="hl">作業</span>から解放。<br>本質的な業務へ。</h1>
+      <p class="hero-lead">
+        IT/Web業界最大級の求人メディア「Green」に特化した運用代行。業界初の<b style="color:var(--on-navy)">面談課金モデル</b>で、
+        初期費用も月額固定費もかけずに採用活動を始められます。
+      </p>
+
+      <div class="hero-price">
+        <div class="amt">
+          <span class="lb">1面談あたり</span>
+          <span class="v">20,000<small>円（税別）</small></span>
         </div>
-    </header>
+        <ul>
+          <li>初期費用ゼロ</li>
+          <li>固定費ゼロ</li>
+          <li>契約期間の縛りなし</li>
+        </ul>
+      </div>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <div class="hero-badge">IT/Web業界特化</div>
-                <h1 class="hero-title">
-                    採用の<span class="highlight">作業</span>から解放<br>
-                    <span class="highlight-green">本質的な業務</span>へ。
-                </h1>
-                <p class="hero-subtitle">
-                    業界初の<strong>面談課金モデル</strong>で、リスクゼロの採用活動を実現
-                </p>
-                <div class="hero-price">
-                    <div class="price-box">
-                        <span class="price-label">1面談</span>
-                        <span class="price-value">2万円</span>
-                    </div>
-                    <div class="price-features">
-                        <div class="price-feature">
-                            <i class="fas fa-check-circle"></i>
-                            <span>初期費用ゼロ</span>
-                        </div>
-                        <div class="price-feature">
-                            <i class="fas fa-check-circle"></i>
-                            <span>固定費ゼロ</span>
-                        </div>
-                        <div class="price-feature">
-                            <i class="fas fa-check-circle"></i>
-                            <span>契約期間の縛りなし</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="hero-cta">
-<a href="https://timerex.net/s/r_matsuoka/6666f3b5/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-large">
-    <i class="fas fa-calendar-check"></i>
-    無料相談を申し込む
-</a>
+      <div class="hero-cta">
+        <a href="#contact" class="btn btn-primary btn-lg">無料で相談する<span class="arw">→</span></a>
+        <a href="#service" class="btn btn-ghost btn-lg" style="border-color:var(--on-navy-line);color:var(--on-navy);background:transparent">サービス詳細を見る</a>
+        <span class="note">フォーム送信のみ／営業のお電話はいたしません</span>
+      </div>
 
-                    <a href="#service" class="btn btn-outline btn-large">
-                        <i class="fas fa-info-circle"></i>
-                        サービス詳細を見る
-                    </a>
-                </div>
-                <div class="hero-stats">
-                    <div class="stat-item">
-                        <div class="stat-number">50+</div>
-                        <div class="stat-label">支援社数</div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-number">100+</div>
-                        <div class="stat-label">IT採用支援実績</div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-number">56%</div>
-                        <div class="stat-label">コスト削減事例</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="hero-bg"></div>
-    </section>
-
-    <!-- Problems Section -->
-    <section class="problems" id="problems">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">採用担当者が抱える<span class="highlight-green">3つの課題</span></h2>
-                <p class="section-subtitle">多くの企業が、採用活動において以下のような悩みを抱えています</p>
-            </div>
-            <div class="problems-grid">
-                <div class="problem-card">
-                    <div class="problem-icon">
-                        <i class="fas fa-network-wired"></i>
-                    </div>
-                    <div class="problem-number">01</div>
-                    <h3 class="problem-title">チャネル管理の<br>複雑化・煩雑化</h3>
-                    <p class="problem-text">
-                        複数の求人媒体を運用することで、管理工数が増大。<br>
-                        各媒体の特性を理解し、最適化するには専門知識が必要です。
-                    </p>
-                </div>
-                <div class="problem-card">
-                    <div class="problem-icon">
-                        <i class="fas fa-clock"></i>
-                    </div>
-                    <div class="problem-number">02</div>
-                    <h3 class="problem-title">運用工数の圧迫による<br>本質業務の欠如</h3>
-                    <p class="problem-text">
-                        日程調整やスカウト配信などの事務作業に時間を取られ、<br>
-                        候補者との対話や口説きといった本質的な業務に集中できない。
-                    </p>
-                </div>
-                <div class="problem-card">
-                    <div class="problem-icon">
-                        <i class="fas fa-chart-line"></i>
-                    </div>
-                    <div class="problem-number">03</div>
-                    <h3 class="problem-title">見えにくい<br>費用対効果</h3>
-                    <p class="problem-text">
-                        月額固定費や高額な成功報酬により、採用成果が出なくても<br>
-                        コストが発生し続ける。投資対効果の測定が困難。
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Market Issues Section -->
-    <section class="market-issues">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">従来の採用代行サービスの<span class="highlight-red">構造的な課題</span></h2>
-                <p class="section-subtitle">既存のサービスは、採用成果に関わらず高額なコストが発生する構造になっています</p>
-            </div>
-            <div class="comparison-grid">
-                <div class="comparison-card old-service">
-                    <div class="comparison-header">
-                        <h3>月額固定型</h3>
-                        <div class="comparison-price">20〜80万円/月</div>
-                    </div>
-                    <ul class="comparison-list">
-                        <li><i class="fas fa-times-circle"></i> 採用ゼロでも費用発生</li>
-                        <li><i class="fas fa-times-circle"></i> 成果と費用が連動しない</li>
-                        <li><i class="fas fa-times-circle"></i> 長期契約の縛りあり</li>
-                    </ul>
-                </div>
-                <div class="comparison-card old-service">
-                    <div class="comparison-header">
-                        <h3>採用成功報酬型</h3>
-                        <div class="comparison-price">60〜120万円/名</div>
-                    </div>
-                    <ul class="comparison-list">
-                        <li><i class="fas fa-times-circle"></i> 1名あたりの単価が高額</li>
-                        <li><i class="fas fa-times-circle"></i> 初期費用が必要</li>
-                        <li><i class="fas fa-times-circle"></i> 面談の質より量重視</li>
-                    </ul>
-                </div>
-                <div class="comparison-card old-service">
-                    <div class="comparison-header">
-                        <h3>Green運用代行<br>（従来型）</h3>
-                        <div class="comparison-price">10〜50万円/月</div>
-                    </div>
-                    <ul class="comparison-list">
-                        <li><i class="fas fa-times-circle"></i> 固定費が毎月発生</li>
-                        <li><i class="fas fa-times-circle"></i> 成果が出なくても支払い</li>
-                        <li><i class="fas fa-times-circle"></i> ROIが不透明</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="solution-arrow">
-                <i class="fas fa-arrow-down"></i>
-                <p>これらの課題を全て解決</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Service Overview -->
-    <section class="service-overview" id="service">
-        <div class="container">
-            <div class="service-content">
-                <div class="service-text">
-                    <div class="service-badge">SERVICE OVERVIEW</div>
-                    <h2 class="section-title">業界初の<span class="highlight-green">完全成功報酬モデル</span></h2>
-                    <p class="service-description">
-                        IT/Web業界最大級の求人メディア<strong>「Green」</strong>に特化した運用代行サービス。<br>
-                        初期費用・月額固定費ゼロで、<strong>面談が成立した分だけ</strong>お支払いいただくリスクフリーの料金体系を実現しました。
-                    </p>
-                    <ul class="service-features-list">
-                        <li>
-                            <i class="fas fa-check"></i>
-                            <span><strong>Green特化：</strong>IT/Web業界に最適化された運用ノウハウ</span>
-                        </li>
-                        <li>
-                            <i class="fas fa-check"></i>
-                            <span><strong>完全代行：</strong>求人作成から面接調整まで一気通貫</span>
-                        </li>
-                        <li>
-                            <i class="fas fa-check"></i>
-                            <span><strong>プロの運用：</strong>大手求人会社出身の経験豊富な担当者</span>
-                        </li>
-                        <li>
-                            <i class="fas fa-check"></i>
-                            <span><strong>リスクゼロ：</strong>成果が出なければ費用は一切発生しません</span>
-                        </li>
-                    </ul>
-                    <div class="service-highlight-box">
-                        <div class="highlight-item">
-                            <div class="highlight-label">対象媒体</div>
-                            <div class="highlight-value">Green（IT/Web特化型）</div>
-                        </div>
-                        <div class="highlight-item">
-                            <div class="highlight-label">業界初モデル</div>
-                            <div class="highlight-value">完全成功報酬 面談課金</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="service-visual">
-                    <div class="service-card-large">
-                        <div class="service-card-header">
-                            <i class="fas fa-handshake"></i>
-                            <h3>1面談あたり</h3>
-                        </div>
-                        <div class="service-card-price">
-                            <span class="currency">¥</span>
-                            <span class="amount">20,000</span>
-                            <span class="tax">（税別）</span>
-                        </div>
-                        <div class="service-card-features">
-                            <div class="feature-item">
-                                <i class="fas fa-gift"></i>
-                                <span>初期費用 ¥0</span>
-                            </div>
-                            <div class="feature-item">
-                                <i class="fas fa-ban"></i>
-                                <span>月額固定費 ¥0</span>
-                            </div>
-                            <div class="feature-item">
-                                <i class="fas fa-infinity"></i>
-                                <span>契約期間 0ヶ月</span>
-                            </div>
-                        </div>
-                        <p class="service-card-note">
-                            ※候補者都合の当日/無断キャンセルは課金対象外
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- What We Do Section -->
-    <section class="what-we-do">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">提供サービス内容<span class="highlight-green">（完全代行）</span></h2>
-                <p class="section-subtitle">求人作成から面接調整まで、採用活動に必要な全ての業務を一気通貫でサポートします</p>
-            </div>
-            <div class="services-grid">
-                <div class="service-item">
-                    <div class="service-item-icon">
-                        <i class="fas fa-pen-fancy"></i>
-                    </div>
-                    <h3>求人作成</h3>
-                    <p>魅力的な求人票の作成と最適化</p>
-                </div>
-                <div class="service-item">
-                    <div class="service-item-icon">
-                        <i class="fas fa-bullseye"></i>
-                    </div>
-                    <h3>ターゲット設計</h3>
-                    <p>採用ペルソナの設定と最適なターゲティング</p>
-                </div>
-                <div class="service-item">
-                    <div class="service-item-icon">
-                        <i class="fas fa-paper-plane"></i>
-                    </div>
-                    <h3>スカウト配信</h3>
-                    <p>効果的なスカウトメッセージの作成と配信</p>
-                </div>
-                <div class="service-item">
-                    <div class="service-item-icon">
-                        <i class="fas fa-heart"></i>
-                    </div>
-                    <h3>気になる配信<br>会いたい運用</h3>
-                    <p>Green独自機能を活用した候補者へのアプローチ</p>
-                </div>
-                <div class="service-item">
-                    <div class="service-item-icon">
-                        <i class="fas fa-user-check"></i>
-                    </div>
-                    <h3>応募者対応<br>（一次スクリーニング）</h3>
-                    <p>応募者の初期対応と適性の見極め</p>
-                </div>
-                <div class="service-item">
-                    <div class="service-item-icon">
-                        <i class="fas fa-calendar-alt"></i>
-                    </div>
-                    <h3>初回面接調整</h3>
-                    <p>日程調整から面接セッティングまで完全代行</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Why Choose Us Section -->
-    <section class="why-choose-us" id="features">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">私たちが選ばれる<span class="highlight-green">3つの理由</span></h2>
-            </div>
-            <div class="reasons-grid">
-                <div class="reason-card">
-                    <div class="reason-number">01</div>
-                    <div class="reason-icon">
-                        <i class="fas fa-shield-alt"></i>
-                    </div>
-                    <h3 class="reason-title">完全リスクフリーの<br>料金体系</h3>
-                    <p class="reason-text">
-                        初期費用・固定費ゼロの完全成功報酬型。面談が成立しなければ費用は一切発生しません。採用活動のリスクを最小限に抑え、安心してご利用いただけます。
-                    </p>
-                    <ul class="reason-benefits">
-                        <li><i class="fas fa-check-circle"></i> 初期投資不要</li>
-                        <li><i class="fas fa-check-circle"></i> 固定費ゼロ</li>
-                        <li><i class="fas fa-check-circle"></i> 契約期間の縛りなし</li>
-                        <li><i class="fas fa-check-circle"></i> 透明性の高い料金体系</li>
-                    </ul>
-                </div>
-                <div class="reason-card">
-                    <div class="reason-number">02</div>
-                    <div class="reason-icon">
-                        <i class="fas fa-user-tie"></i>
-                    </div>
-                    <h3 class="reason-title">IT採用の<br>プロフェッショナル</h3>
-                    <p class="reason-text">
-                        大手求人会社出身（IT系5年以上）のプロフェッショナルが担当。累計100社以上のIT採用支援実績を活かし、効果的な運用を実現します。
-                    </p>
-                    <ul class="reason-benefits">
-                        <li><i class="fas fa-check-circle"></i> IT業界専門の知見</li>
-                        <li><i class="fas fa-check-circle"></i> 100社以上の支援実績</li>
-                        <li><i class="fas fa-check-circle"></i> Green運用の最適化ノウハウ</li>
-                        <li><i class="fas fa-check-circle"></i> 継続的な改善提案</li>
-                    </ul>
-                </div>
-                <div class="reason-card">
-                    <div class="reason-number">03</div>
-                    <div class="reason-icon">
-                        <i class="fas fa-rocket"></i>
-                    </div>
-                    <h3 class="reason-title">本質業務への<br>集中支援</h3>
-                    <p class="reason-text">
-                        煩雑な事務作業から解放され、候補者との対話や口説きといった本質的な採用業務に集中できます。採用活動の質を向上させ、優秀な人材の獲得を実現します。
-                    </p>
-                    <ul class="reason-benefits">
-                        <li><i class="fas fa-check-circle"></i> 事務作業の完全代行</li>
-                        <li><i class="fas fa-check-circle"></i> 本質業務への時間確保</li>
-                        <li><i class="fas fa-check-circle"></i> 候補者体験の向上</li>
-                        <li><i class="fas fa-check-circle"></i> 採用成功率の向上</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Pricing Section -->
-    <section class="pricing" id="pricing">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">料金プラン</h2>
-                <p class="section-subtitle">シンプルで透明性の高い料金体系。成果に応じた明確な課金モデルです</p>
-            </div>
-            <div class="pricing-content">
-                <div class="pricing-main">
-                    <div class="pricing-card-main">
-                        <div class="pricing-badge">RECOMMENDED</div>
-                        <h3 class="pricing-title">完全成功報酬プラン</h3>
-                        <div class="pricing-price-box">
-                            <div class="pricing-price">
-                                <span class="price-amount">¥20,000</span>
-                                <span class="price-unit">/面談</span>
-                            </div>
-                            <p class="price-tax">（税別）</p>
-                        </div>
-                        <ul class="pricing-features">
-                            <li>
-                                <i class="fas fa-check"></i>
-                                <span>初期費用：<strong>¥0</strong></span>
-                            </li>
-                            <li>
-                                <i class="fas fa-check"></i>
-                                <span>月額固定費：<strong>¥0</strong></span>
-                            </li>
-                            <li>
-                                <i class="fas fa-check"></i>
-                                <span>契約期間：<strong>縛りなし</strong></span>
-                            </li>
-                            <li>
-                                <i class="fas fa-check"></i>
-                                <span>求人作成・最適化</span>
-                            </li>
-                            <li>
-                                <i class="fas fa-check"></i>
-                                <span>ターゲット設計</span>
-                            </li>
-                            <li>
-                                <i class="fas fa-check"></i>
-                                <span>スカウト配信（無制限）</span>
-                            </li>
-                            <li>
-                                <i class="fas fa-check"></i>
-                                <span>応募者対応・一次スクリーニング</span>
-                            </li>
-                            <li>
-                                <i class="fas fa-check"></i>
-                                <span>面接日程調整</span>
-                            </li>
-                            <li>
-                                <i class="fas fa-check"></i>
-                                <span>月次レポート・改善提案</span>
-                            </li>
-                            <li>
-                                <i class="fas fa-check"></i>
-                                <span>専任担当者によるサポート</span>
-                            </li>
-                        </ul>
-                        <div class="pricing-note">
-                            <i class="fas fa-info-circle"></i>
-                            <p>候補者都合の当日キャンセルや無断キャンセルの場合は課金対象外となります</p>
-                        </div>
-<a href="https://timerex.net/s/r_matsuoka/6666f3b5/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-large btn-full">
-    無料相談を申し込む
-</a>
-
-                    </div>
-                </div>
-                <div class="pricing-comparison">
-                    <h3 class="comparison-title">コストシミュレーション</h3>
-                    <p class="comparison-subtitle">従来の採用代行サービスとの比較（3ヶ月間で10名面談、2名採用の場合）</p>
-                   <div class="comparison-table">
-    <!-- ヘッダー行を削除 -->
-    <div class="comparison-row">
-        <div class="comparison-cell"><strong>当サービス</strong></div>
-        <div class="comparison-cell">¥0</div>
-        <div class="comparison-cell">¥0</div>
-        <div class="comparison-cell">¥200,000<br><small>(10面談×¥20,000)</small></div>
-        <div class="comparison-cell highlight-price">¥200,000</div>
+      <div class="hero-trust">
+        <div class="htile"><div class="n">50+</div><div class="l">支援社数</div></div>
+        <div class="htile"><div class="n">100+</div><div class="l">IT採用支援実績</div></div>
+        <div class="htile"><div class="n">56%</div><div class="l">コスト削減事例</div></div>
+      </div>
     </div>
-    <!-- 以下続く -->
-</div>
-                            <div class="comparison-cell"><strong>当サービス</strong></div>
-                            <div class="comparison-cell">¥0</div>
-                            <div class="comparison-cell">¥0</div>
-                            <div class="comparison-cell">¥200,000<br><small>(10面談×¥20,000)</small></div>
-                            <div class="comparison-cell highlight-price">¥200,000</div>
-                        </div>
-                        <div class="comparison-row old">
-                            <div class="comparison-cell">月額固定型</div>
-                            <div class="comparison-cell">¥300,000</div>
-                            <div class="comparison-cell">¥500,000<br><small>(¥50万×3ヶ月)</small></div>
-                            <div class="comparison-cell">¥0</div>
-                            <div class="comparison-cell">¥1,800,000</div>
-                        </div>
-                        <div class="comparison-row old">
-                            <div class="comparison-cell">採用成功報酬型</div>
-                            <div class="comparison-cell">¥200,000</div>
-                            <div class="comparison-cell">¥0</div>
-                            <div class="comparison-cell">¥1,600,000<br><small>(2名×¥800,000)</small></div>
-                            <div class="comparison-cell">¥1,800,000</div>
-                        </div>
-                    </div>
-                    <div class="cost-saving">
-                        <i class="fas fa-piggy-bank"></i>
-                        <div class="saving-text">
-                            <strong>最大¥1,600,000のコスト削減！</strong>
-                            <p>従来サービスと比較して約89%のコストダウンを実現</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+  </section>
 
-    <!-- Flow Section -->
-    <section class="flow" id="flow">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">支援の流れ<span class="highlight-green">（6ステップ）</span></h2>
-                <p class="section-subtitle">キックオフから運用改善まで、スムーズな導入をサポートします</p>
-            </div>
-            <div class="flow-timeline">
-                <div class="flow-item">
-                    <div class="flow-step">
-                        <div class="step-number">01</div>
-                        <div class="step-icon">
-                            <i class="fas fa-comments"></i>
-                        </div>
-                    </div>
-                    <div class="flow-content">
-                        <h3 class="flow-title">キックオフ</h3>
-                        <p class="flow-description">
-                            採用課題のヒアリング、目標設定、スケジュール確認を実施。貴社の採用ニーズを深く理解し、最適な戦略を立案します。
-                        </p>
-                        <ul class="flow-checklist">
-                            <li><i class="fas fa-check"></i> 採用課題・目標のヒアリング</li>
-                            <li><i class="fas fa-check"></i> 現状の採用活動の分析</li>
-                            <li><i class="fas fa-check"></i> 運用スケジュールの策定</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="flow-item">
-                    <div class="flow-step">
-                        <div class="step-number">02</div>
-                        <div class="step-icon">
-                            <i class="fas fa-file-alt"></i>
-                        </div>
-                    </div>
-                    <div class="flow-content">
-                        <h3 class="flow-title">求人/コンテンツ整備</h3>
-                        <p class="flow-description">
-                            魅力的な求人票の作成と最適化。貴社の強みを最大限にアピールし、ターゲット人材に刺さるコンテンツを制作します。
-                        </p>
-                        <ul class="flow-checklist">
-                            <li><i class="fas fa-check"></i> 求人票の作成・最適化</li>
-                            <li><i class="fas fa-check"></i> 訴求ポイントの設計</li>
-                            <li><i class="fas fa-check"></i> コンテンツの確認・承認</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="flow-item">
-                    <div class="flow-step">
-                        <div class="step-number">03</div>
-                        <div class="step-icon">
-                            <i class="fas fa-crosshairs"></i>
-                        </div>
-                    </div>
-                    <div class="flow-content">
-                        <h3 class="flow-title">ターゲット・スカウト設計</h3>
-                        <p class="flow-description">
-                            採用ペルソナの設定と、効果的なスカウトメッセージの設計。ターゲット層に最も響くアプローチを構築します。
-                        </p>
-                        <ul class="flow-checklist">
-                            <li><i class="fas fa-check"></i> 採用ペルソナの設定</li>
-                            <li><i class="fas fa-check"></i> ターゲティング戦略の策定</li>
-                            <li><i class="fas fa-check"></i> スカウト文面の作成</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="flow-item">
-                    <div class="flow-step">
-                        <div class="step-number">04</div>
-                        <div class="step-icon">
-                            <i class="fas fa-rocket"></i>
-                        </div>
-                    </div>
-                    <div class="flow-content">
-                        <h3 class="flow-title">配信・運用開始</h3>
-                        <p class="flow-description">
-                            スカウト配信と「気になる」「会いたい」機能を活用した積極的なアプローチを開始。効果測定しながら最適化を継続します。
-                        </p>
-                        <ul class="flow-checklist">
-                            <li><i class="fas fa-check"></i> スカウトの配信開始</li>
-                            <li><i class="fas fa-check"></i> Green機能のフル活用</li>
-                            <li><i class="fas fa-check"></i> 日次での効果測定</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="flow-item">
-                    <div class="flow-step">
-                        <div class="step-number">05</div>
-                        <div class="step-icon">
-                            <i class="fas fa-user-check"></i>
-                        </div>
-                    </div>
-                    <div class="flow-content">
-                        <h3 class="flow-title">応募対応・面接調整</h3>
-                        <p class="flow-description">
-                            応募者への初期対応、一次スクリーニング、面接日程調整まで完全代行。貴社は優良候補者との面談に集中できます。
-                        </p>
-                        <ul class="flow-checklist">
-                            <li><i class="fas fa-check"></i> 応募者への初期対応</li>
-                            <li><i class="fas fa-check"></i> 一次スクリーニングの実施</li>
-                            <li><i class="fas fa-check"></i> 面接日程の調整・確定</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="flow-item">
-                    <div class="flow-step">
-                        <div class="step-number">06</div>
-                        <div class="step-icon">
-                            <i class="fas fa-chart-line"></i>
-                        </div>
-                    </div>
-                    <div class="flow-content">
-                        <h3 class="flow-title">改善・レポート</h3>
-                        <p class="flow-description">
-                            月次でのレポート提供と継続的な改善提案。データに基づいた最適化により、採用成果を最大化します。
-                        </p>
-                        <ul class="flow-checklist">
-                            <li><i class="fas fa-check"></i> 月次レポートの提供</li>
-                            <li><i class="fas fa-check"></i> KPI分析と効果測定</li>
-                            <li><i class="fas fa-check"></i> 継続的な改善提案</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+  <!-- PROBLEMS -->
+  <section id="problems">
+    <div class="wrap">
+      <div class="sec-head rv">
+        <span class="kick">01 ・ 採用担当者の課題</span>
+        <h2>採用担当者が抱える、3つの課題。</h2>
+        <p>多くの企業が、採用活動において以下のような悩みを抱えています。</p>
+      </div>
+      <div class="grid3">
+        <div class="card rv">
+          <div class="no">PROBLEM 01</div>
+          <h4 style="margin-top:8px">チャネル管理の複雑化・煩雑化</h4>
+          <p>複数の求人媒体を運用することで、管理工数が増大。各媒体の特性を理解し、最適化するには専門知識が必要です。</p>
         </div>
-    </section>
-
-    <!-- Target Companies Section -->
-    <section class="target-companies">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">こんな企業におすすめ</h2>
-            </div>
-            <div class="target-grid">
-                <div class="target-card">
-                    <i class="fas fa-building"></i>
-                    <h3>IT/Web企業<br>スタートアップ</h3>
-                    <p>シリーズA/B段階で採用を強化したい企業</p>
-                </div>
-                <div class="target-card">
-                    <i class="fas fa-code"></i>
-                    <h3>エンジニア採用<br>注力企業</h3>
-                    <p>技術職の採用に力を入れている企業</p>
-                </div>
-                <div class="target-card">
-                    <i class="fas fa-user-friends"></i>
-                    <h3>採用専任者<br>不在企業</h3>
-                    <p>採用リソースが不足している企業</p>
-                </div>
-                <div class="target-card">
-                    <i class="fas fa-chart-line"></i>
-                    <h3>10〜100名規模<br>成長企業</h3>
-                    <p>急成長フェーズで人材採用が急務の企業</p>
-                </div>
-            </div>
+        <div class="card rv">
+          <div class="no">PROBLEM 02</div>
+          <h4 style="margin-top:8px">運用工数の圧迫による本質業務の欠如</h4>
+          <p>日程調整やスカウト配信などの事務作業に時間を取られ、候補者との対話や口説きといった本質的な業務に集中できない。</p>
         </div>
-    </section>
-
-    <!-- FAQ Section -->
-    <section class="faq" id="faq">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">よくある質問</h2>
-            </div>
-            <div class="faq-list">
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <i class="fas fa-question-circle"></i>
-                        <h3>本当に初期費用・固定費はゼロですか？</h3>
-                        <i class="fas fa-chevron-down"></i>
-                    </div>
-                    <div class="faq-answer">
-                        <p>はい、完全にゼロです。面談が成立した場合のみ、1面談あたり2万円（税別）をお支払いいただく完全成功報酬型となります。採用成果が出なければ費用は一切発生しません。</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <i class="fas fa-question-circle"></i>
-                        <h3>契約期間の縛りはありますか？</h3>
-                        <i class="fas fa-chevron-down"></i>
-                    </div>
-                    <div class="faq-answer">
-                        <p>契約期間の縛りは一切ございません。いつでも解約可能ですので、リスクなくご利用いただけます。ただし、効果を実感いただくためには最低3ヶ月程度の運用を推奨しております。</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <i class="fas fa-question-circle"></i>
-                        <h3>候補者がキャンセルした場合も課金されますか？</h3>
-                        <i class="fas fa-chevron-down"></i>
-                    </div>
-                    <div class="faq-answer">
-                        <p>候補者都合の当日キャンセルや無断キャンセルの場合は課金対象外となります。面談が実際に成立した場合のみ課金いたしますので、ご安心ください。</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <i class="fas fa-question-circle"></i>
-                        <h3>Green以外の媒体も対応していますか？</h3>
-                        <i class="fas fa-chevron-down"></i>
-                    </div>
-                    <div class="faq-answer">
-                        <p>現在はIT/Web業界に特化した「Green」のみの対応となります。Greenに最適化された運用ノウハウにより、高い成果を実現しております。</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <i class="fas fa-question-circle"></i>
-                        <h3>どのくらいの期間で成果が出ますか？</h3>
-                        <i class="fas fa-chevron-down"></i>
-                    </div>
-                    <div class="faq-answer">
-                        <p>企業規模や採用要件により異なりますが、通常1〜2ヶ月で初回の面談設定が可能です。継続的な運用により、3ヶ月目以降は安定的な面談数を確保できることが多いです。</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <i class="fas fa-question-circle"></i>
-                        <h3>スカウト配信数に制限はありますか？</h3>
-                        <i class="fas fa-chevron-down"></i>
-                    </div>
-                    <div class="faq-answer">
-                        <p>スカウト配信数に制限はございません。ターゲット層に対して最適な頻度・量でアプローチを行い、効果を最大化します。</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <i class="fas fa-question-circle"></i>
-                        <h3>面接の合否判断もお願いできますか？</h3>
-                        <i class="fas fa-chevron-down"></i>
-                    </div>
-                    <div class="faq-answer">
-                        <p>初回面接の日程調整まで代行いたしますが、合否判断は貴社にて実施していただきます。候補者との対話や見極めといった本質的な業務に集中していただくためのサービス設計となっております。</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <i class="fas fa-question-circle"></i>
-                        <h3>小規模なスタートアップでも利用できますか？</h3>
-                        <i class="fas fa-chevron-down"></i>
-                    </div>
-                    <div class="faq-answer">
-                        <p>はい、ご利用いただけます。創業期（10名未満）からシリーズB段階まで、幅広い企業規模に対応しております。特に採用リソースが限られるスタートアップにこそ、当サービスの価値を実感いただけます。</p>
-                    </div>
-                </div>
-            </div>
+        <div class="card rv">
+          <div class="no">PROBLEM 03</div>
+          <h4 style="margin-top:8px">見えにくい費用対効果</h4>
+          <p>月額固定費や高額な成功報酬により、採用成果が出なくてもコストが発生し続ける。投資対効果の測定が困難。</p>
         </div>
-    </section>
-
-<!-- CTA Section -->
-<section class="cta" id="contact">
-    <div class="container">
-        <div class="cta-content">
-            <h2 class="cta-title">採用の成果を最大化し、<br>本質的な業務に集中しませんか？</h2>
-            <p class="cta-subtitle">
-                無料相談では、貴社の採用課題をヒアリングし、<br>
-                最適な運用プランをご提案いたします。
-            </p>
-            <div class="cta-features">
-                <div class="cta-feature">
-                    <i class="fas fa-check-circle"></i>
-                    <span>初期費用・固定費ゼロ</span>
-                </div>
-                <div class="cta-feature">
-                    <i class="fas fa-check-circle"></i>
-                    <span>リスクフリーで開始</span>
-                </div>
-                <div class="cta-feature">
-                    <i class="fas fa-check-circle"></i>
-                    <span>契約期間の縛りなし</span>
-                </div>
-            </div>
-            <div class="cta-buttons">
-                <!-- ✅ 無料相談予約ボタン（TimerRex） -->
-                <a href="https://timerex.net/s/r_matsuoka/6666f3b5/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-xlarge">
-                    <i class="fas fa-calendar-check"></i>
-                    無料相談を申し込む
-                </a>
-                
-                <!-- ✅ お問い合わせボタン（Googleフォーム） -->
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfWmokTEDyPqRaPG-1OOuP5ey6UYoLmA2n6G6Cs7ULhOKlyKQ/viewform" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-xlarge">
-                    <i class="fas fa-envelope"></i>
-                    お問い合わせする
-                </a>
-                
-                <!-- 電話番号 -->
-                <a href="tel:0368979315" class="btn btn-outline btn-xlarge">
-                    <i class="fas fa-phone"></i>
-                    03-6897-9315
-                </a>
-            </div>
-            <p class="cta-note">
-                <i class="fas fa-info-circle"></i>
-                営業時間：平日 10:00〜19:00 / 24時間以内に返信いたします
-            </p>
-        </div>
+      </div>
     </div>
-</section>
+  </section>
 
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-col">
-                    <div class="footer-logo">
-                        <i class="fas fa-leaf"></i>
-                        <span>Green運用代行</span>
-                    </div>
-                    <p class="footer-description">
-                        IT/Web業界特化のGreen媒体運用代行サービス。<br>
-                        業界初の面談課金モデルで、リスクフリーの採用活動を実現します。
-                    </p>
-                </div>
-                <div class="footer-col">
-                    <h4>サービス</h4>
-                    <ul>
-                        <li><a href="#service">サービス概要</a></li>
-                        <li><a href="#features">選ばれる理由</a></li>
-                        <li><a href="#pricing">料金プラン</a></li>
-                        <li><a href="#flow">導入の流れ</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>情報</h4>
-                    <ul>
-                        <li><a href="#faq">よくある質問</a></li>
-<li><a href="https://docs.google.com/forms/d/e/1FAIpQLSfWmokTEDyPqRaPG-1OOuP5ey6UYoLmA2n6G6Cs7ULhOKlyKQ/viewform" target="_blank" rel="noopener noreferrer">お問い合わせ</a></li>
-                        <li><a href="#">プライバシーポリシー</a></li>
-                        <li><a href="#">利用規約</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>お問い合わせ</h4>
-                    <ul class="footer-contact">
-                        <li>
-                            <i class="fas fa-envelope"></i>
-                            <a href="mailto:contact@example.com">r_matsuoka@agent-best.net</a>
-                        </li>
-                        <li>
-                            <i class="fas fa-phone"></i>
-                            <a href="tel:0312345678">03-6897-9315</a>
-                        </li>
-                        <li>
-                            <i class="fas fa-clock"></i>
-                            <span>平日 10:00〜19:00</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 Green運用代行サービス. All rights reserved.</p>
-            </div>
+  <!-- MARKET ISSUES -->
+  <section class="band" id="market">
+    <div class="wrap">
+      <div class="sec-head rv">
+        <span class="kick">02 ・ 市場の構造</span>
+        <h2>従来の採用代行サービスの、構造的な課題。</h2>
+        <p>既存のサービスは、採用成果に関わらず高額なコストが発生する構造になっています。</p>
+      </div>
+      <div class="grid3">
+        <div class="card old rv">
+          <h4>月額固定型</h4>
+          <div class="amt">20〜80万円 / 月</div>
+          <ul>
+            <li>採用ゼロでも費用が発生</li>
+            <li>成果と費用が連動しない</li>
+            <li>長期契約の縛りあり</li>
+          </ul>
         </div>
-    </footer>
+        <div class="card old rv">
+          <h4>採用成功報酬型</h4>
+          <div class="amt">60〜120万円 / 名</div>
+          <ul>
+            <li>1名あたりの単価が高額</li>
+            <li>初期費用が必要</li>
+            <li>面談の質より量を重視しがち</li>
+          </ul>
+        </div>
+        <div class="card old rv">
+          <h4>Green運用代行（従来型）</h4>
+          <div class="amt">10〜50万円 / 月</div>
+          <ul>
+            <li>固定費が毎月発生</li>
+            <li>成果が出なくても支払い</li>
+            <li>ROIが不透明</li>
+          </ul>
+        </div>
+      </div>
+      <div class="down rv"><span class="ar">↓</span>これらの課題を、すべて解決します。</div>
+    </div>
+  </section>
 
-    <!-- Scroll to Top Button -->
-    <button class="scroll-to-top" aria-label="トップへ戻る">
-        <i class="fas fa-arrow-up"></i>
-    </button>
+  <!-- SERVICE -->
+  <section id="service">
+    <div class="wrap">
+      <div class="sec-head rv">
+        <span class="kick">03 ・ サービス概要</span>
+        <h2>業界初の、完全成功報酬モデル。</h2>
+        <p>初期費用・月額固定費ゼロ。<b>面談が成立した分だけ</b>お支払いいただく、リスクフリーの料金体系です。</p>
+      </div>
+      <div class="grid2">
+        <div class="card rv">
+          <h4>サービスの特徴</h4>
+          <ul class="ilist">
+            <li><span class="ck">✓</span><span><b>Green特化：</b>IT/Web業界に最適化された運用ノウハウ</span></li>
+            <li><span class="ck">✓</span><span><b>完全代行：</b>求人作成から面接調整まで一気通貫</span></li>
+            <li><span class="ck">✓</span><span><b>プロの運用：</b>大手求人会社出身の経験豊富な担当者</span></li>
+            <li><span class="ck">✓</span><span><b>リスクゼロ：</b>成果が出なければ費用は一切発生しません</span></li>
+          </ul>
+        </div>
+        <div class="card rv">
+          <h4>提供サービス（完全代行）</h4>
+          <ul class="ilist">
+            <li><span class="ck">✓</span><span>求人作成：魅力的な求人票の作成と最適化</span></li>
+            <li><span class="ck">✓</span><span>ターゲット設計：採用ペルソナの設定とターゲティング</span></li>
+            <li><span class="ck">✓</span><span>スカウト配信：効果的なメッセージの作成と配信</span></li>
+            <li><span class="ck">✓</span><span>「気になる」「会いたい」運用：Green独自機能の活用</span></li>
+            <li><span class="ck">✓</span><span>応募者対応：初期対応と一次スクリーニング</span></li>
+            <li><span class="ck">✓</span><span>初回面接調整：日程調整からセッティングまで</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <!-- JavaScript -->
-    <script src="js/script.js"></script>
+  <!-- WHY -->
+  <section class="band" id="why">
+    <div class="wrap">
+      <div class="sec-head rv">
+        <span class="kick">04 ・ 選ばれる理由</span>
+        <h2>私たちが選ばれる、3つの理由。</h2>
+      </div>
+      <div class="grid3">
+        <div class="card rv">
+          <div class="no">REASON 01</div>
+          <h4 style="margin-top:8px">完全リスクフリーの料金体系</h4>
+          <p>初期費用・固定費ゼロの完全成功報酬型。面談が成立しなければ費用は一切発生しません。採用活動のリスクを最小限に抑えられます。</p>
+          <ul class="ilist">
+            <li><span class="ck">✓</span><span>初期投資不要</span></li>
+            <li><span class="ck">✓</span><span>固定費ゼロ</span></li>
+            <li><span class="ck">✓</span><span>契約期間の縛りなし</span></li>
+          </ul>
+        </div>
+        <div class="card rv">
+          <div class="no">REASON 02</div>
+          <h4 style="margin-top:8px">IT採用のプロフェッショナル</h4>
+          <p>大手求人会社出身（IT系5年以上）のプロフェッショナルが担当。累計100社以上のIT採用支援実績を活かし、効果的な運用を実現します。</p>
+          <ul class="ilist">
+            <li><span class="ck">✓</span><span>IT業界専門の知見</span></li>
+            <li><span class="ck">✓</span><span>100社以上の支援実績</span></li>
+            <li><span class="ck">✓</span><span>Green運用の最適化ノウハウ</span></li>
+          </ul>
+        </div>
+        <div class="card rv">
+          <div class="no">REASON 03</div>
+          <h4 style="margin-top:8px">本質業務への集中支援</h4>
+          <p>煩雑な事務作業から解放され、候補者との対話や口説きといった本質的な採用業務に集中できます。採用活動の質そのものが上がります。</p>
+          <ul class="ilist">
+            <li><span class="ck">✓</span><span>事務作業の完全代行</span></li>
+            <li><span class="ck">✓</span><span>本質業務への時間確保</span></li>
+            <li><span class="ck">✓</span><span>候補者体験の向上</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section id="price">
+    <div class="wrap">
+      <div class="sec-head center rv">
+        <span class="kick">05 ・ 料金プラン</span>
+        <h2>シンプルで、透明性の高い料金体系。</h2>
+      </div>
+
+      <div class="grid2" style="align-items:start">
+        <div class="pricecard rv">
+          <div class="top">
+            <div class="lbl">完全成功報酬プラン</div>
+            <div class="amt">¥20,000<small>/ 面談（税別）</small></div>
+            <div class="cap">面談が成立した分だけ、お支払いいただきます。</div>
+          </div>
+          <div class="body">
+            <ul class="ilist" style="margin-top:0">
+              <li><span class="ck">✓</span><span>初期費用：<b>¥0</b></span></li>
+              <li><span class="ck">✓</span><span>月額固定費：<b>¥0</b></span></li>
+              <li><span class="ck">✓</span><span>契約期間：<b>縛りなし</b></span></li>
+              <li><span class="ck">✓</span><span>求人作成・最適化</span></li>
+              <li><span class="ck">✓</span><span>ターゲット設計</span></li>
+              <li><span class="ck">✓</span><span>スカウト配信（無制限）</span></li>
+              <li><span class="ck">✓</span><span>応募者対応・一次スクリーニング</span></li>
+              <li><span class="ck">✓</span><span>面接日程調整</span></li>
+              <li><span class="ck">✓</span><span>月次レポート・改善提案</span></li>
+              <li><span class="ck">✓</span><span>専任担当者によるサポート</span></li>
+            </ul>
+            <p class="note">※ 候補者都合の当日キャンセルや無断キャンセルの場合は、課金対象外となります。</p>
+          </div>
+        </div>
+
+        <div class="rv">
+          <h3 style="font-size:1.1rem;font-weight:800">コストシミュレーション</h3>
+          <p style="font-size:.9rem;color:var(--ink-soft);margin:8px 0 18px">3ヶ月間で10名面談・2名採用した場合の比較です。</p>
+          <div class="tbl-scroll">
+            <table class="sim">
+              <thead>
+                <tr><th>サービス形態</th><th>初期費用</th><th>月額費用</th><th>成果報酬</th><th>合計</th></tr>
+              </thead>
+              <tbody>
+                <tr class="ours">
+                  <td><b>当サービス</b></td>
+                  <td>¥0</td>
+                  <td>¥0</td>
+                  <td>¥200,000<small>10面談 × ¥20,000</small></td>
+                  <td>¥200,000</td>
+                </tr>
+                <tr>
+                  <td>月額固定型</td>
+                  <td>¥300,000</td>
+                  <td>¥1,500,000<small>¥50万 × 3ヶ月</small></td>
+                  <td>¥0</td>
+                  <td>¥1,800,000</td>
+                </tr>
+                <tr>
+                  <td>採用成功報酬型</td>
+                  <td>¥200,000</td>
+                  <td>¥0</td>
+                  <td>¥1,600,000<small>2名 × ¥800,000</small></td>
+                  <td>¥1,800,000</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="saving">
+            <b>最大 ¥1,600,000 のコスト削減</b>
+            <p>従来サービスと比較して、約89%のコストダウンを実現します。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FLOW -->
+  <section class="band" id="flow">
+    <div class="wrap">
+      <div class="sec-head rv">
+        <span class="kick">06 ・ 支援の流れ</span>
+        <h2>キックオフから運用改善まで、6ステップ。</h2>
+      </div>
+      <div class="steps">
+        <div class="step rv">
+          <div class="no">01</div>
+          <div>
+            <h4>キックオフ</h4>
+            <p>採用課題のヒアリング、目標設定、スケジュール確認を実施。貴社の採用ニーズを深く理解し、最適な戦略を立案します。</p>
+            <div class="tags"><span>採用課題・目標のヒアリング</span><span>現状の採用活動の分析</span><span>運用スケジュールの策定</span></div>
+          </div>
+        </div>
+        <div class="step rv">
+          <div class="no">02</div>
+          <div>
+            <h4>求人・コンテンツ整備</h4>
+            <p>魅力的な求人票の作成と最適化。貴社の強みを最大限にアピールし、ターゲット人材に刺さるコンテンツを制作します。</p>
+            <div class="tags"><span>求人票の作成・最適化</span><span>訴求ポイントの設計</span><span>コンテンツの確認・承認</span></div>
+          </div>
+        </div>
+        <div class="step rv">
+          <div class="no">03</div>
+          <div>
+            <h4>ターゲット・スカウト設計</h4>
+            <p>採用ペルソナの設定と、効果的なスカウトメッセージの設計。ターゲット層に最も響くアプローチを構築します。</p>
+            <div class="tags"><span>採用ペルソナの設定</span><span>ターゲティング戦略の策定</span><span>スカウト文面の作成</span></div>
+          </div>
+        </div>
+        <div class="step rv">
+          <div class="no">04</div>
+          <div>
+            <h4>配信・運用開始</h4>
+            <p>スカウト配信と「気になる」「会いたい」機能を活用した積極的なアプローチを開始。効果測定しながら最適化を継続します。</p>
+            <div class="tags"><span>スカウトの配信開始</span><span>Green機能のフル活用</span><span>日次での効果測定</span></div>
+          </div>
+        </div>
+        <div class="step rv">
+          <div class="no">05</div>
+          <div>
+            <h4>応募対応・面接調整</h4>
+            <p>応募者への初期対応、一次スクリーニング、面接日程調整まで完全代行。貴社は優良候補者との面談に集中できます。</p>
+            <div class="tags"><span>応募者への初期対応</span><span>一次スクリーニングの実施</span><span>面接日程の調整・確定</span></div>
+          </div>
+        </div>
+        <div class="step rv">
+          <div class="no">06</div>
+          <div>
+            <h4>改善・レポート</h4>
+            <p>月次でのレポート提供と継続的な改善提案。データに基づいた最適化により、採用成果を最大化します。</p>
+            <div class="tags"><span>月次レポートの提供</span><span>KPI分析と効果測定</span><span>継続的な改善提案</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TARGET -->
+  <section id="target">
+    <div class="wrap">
+      <div class="sec-head center rv">
+        <span class="kick">07 ・ 対象企業</span>
+        <h2>こんな企業におすすめです。</h2>
+      </div>
+      <div class="grid4">
+        <div class="card rv" style="text-align:center">
+          <h4>IT/Web企業・スタートアップ</h4>
+          <p>シリーズA/B段階で採用を強化したい企業</p>
+        </div>
+        <div class="card rv" style="text-align:center">
+          <h4>エンジニア採用に注力する企業</h4>
+          <p>技術職の採用に力を入れている企業</p>
+        </div>
+        <div class="card rv" style="text-align:center">
+          <h4>採用専任者が不在の企業</h4>
+          <p>採用リソースが不足している企業</p>
+        </div>
+        <div class="card rv" style="text-align:center">
+          <h4>10〜100名規模の成長企業</h4>
+          <p>急成長フェーズで人材採用が急務の企業</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="band" id="faq">
+    <div class="wrap">
+      <div class="sec-head center rv">
+        <span class="kick">08 ・ よくある質問</span>
+        <h2>よくあるご質問。</h2>
+      </div>
+      <div style="max-width:820px;margin:0 auto" class="rv">
+        <details class="faq">
+          <summary><span class="q">Q</span>本当に初期費用・固定費はゼロですか？</summary>
+          <div class="a">はい、完全にゼロです。面談が成立した場合のみ、1面談あたり2万円（税別）をお支払いいただく完全成功報酬型となります。採用成果が出なければ費用は一切発生しません。</div>
+        </details>
+        <details class="faq">
+          <summary><span class="q">Q</span>契約期間の縛りはありますか？</summary>
+          <div class="a">契約期間の縛りは一切ございません。いつでも解約可能ですので、リスクなくご利用いただけます。ただし、効果を実感いただくためには最低3ヶ月程度の運用を推奨しております。</div>
+        </details>
+        <details class="faq">
+          <summary><span class="q">Q</span>候補者がキャンセルした場合も課金されますか？</summary>
+          <div class="a">候補者都合の当日キャンセルや無断キャンセルの場合は課金対象外となります。面談が実際に成立した場合のみ課金いたしますので、ご安心ください。</div>
+        </details>
+        <details class="faq">
+          <summary><span class="q">Q</span>Green以外の媒体も対応していますか？</summary>
+          <div class="a">本サービスはIT/Web業界に特化した「Green」のみの対応です。Greenに最適化された運用ノウハウにより、高い成果を実現しております。他媒体については、当社の他サービスにてご相談を承ります。</div>
+        </details>
+        <details class="faq">
+          <summary><span class="q">Q</span>どのくらいの期間で成果が出ますか？</summary>
+          <div class="a">企業規模や採用要件により異なりますが、通常1〜2ヶ月で初回の面談設定が可能です。継続的な運用により、3ヶ月目以降は安定的な面談数を確保できることが多いです。</div>
+        </details>
+        <details class="faq">
+          <summary><span class="q">Q</span>スカウト配信数に制限はありますか？</summary>
+          <div class="a">スカウト配信数に制限はございません。ターゲット層に対して最適な頻度・量でアプローチを行い、効果を最大化します。</div>
+        </details>
+        <details class="faq">
+          <summary><span class="q">Q</span>面接の合否判断もお願いできますか？</summary>
+          <div class="a">初回面接の日程調整まで代行いたしますが、合否判断は貴社にて実施していただきます。候補者との対話や見極めといった本質的な業務に集中していただくためのサービス設計となっております。</div>
+        </details>
+        <details class="faq">
+          <summary><span class="q">Q</span>小規模なスタートアップでも利用できますか？</summary>
+          <div class="a">はい、ご利用いただけます。創業期（10名未満）からシリーズB段階まで、幅広い企業規模に対応しております。特に採用リソースが限られるスタートアップにこそ、当サービスの価値を実感いただけます。</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="wrap">
+      <div class="final rv">
+        <span class="lbl">Contact ・ 相談無料</span>
+        <h2>採用の成果を最大化し、<br>本質的な業務に集中しませんか？</h2>
+        <p>無料相談では、貴社の採用課題をヒアリングし、最適な運用プランをご提案いたします。採用ご担当者さま向けの窓口です。</p>
+
+        <div class="formcard">
+          <form id="contact-form" novalidate>
+            <div class="field">
+              <label for="company">会社名 <span class="req">必須</span></label>
+              <input type="text" id="company" name="company" required autocomplete="organization">
+            </div>
+            <div class="field">
+              <label for="name">お名前 <span class="req">必須</span></label>
+              <input type="text" id="name" name="name" required autocomplete="name">
+            </div>
+            <div class="field">
+              <label for="email">メールアドレス <span class="req">必須</span></label>
+              <input type="email" id="email" name="email" required autocomplete="email">
+            </div>
+            <div class="field">
+              <label for="message">お問い合わせ内容 <span class="req">必須</span></label>
+              <textarea id="message" name="message" rows="6" required></textarea>
+            </div>
+            <p class="form-error" id="form-error" role="alert"></p>
+            <button type="submit" class="btn btn-primary submit-btn" id="submit-btn">送信する <span class="arw" aria-hidden="true">→</span></button>
+            <p class="privacy-note">送信いただいた情報は、お問い合わせ対応の目的にのみ利用いたします。</p>
+          </form>
+
+          <div class="thanks" id="thanks" hidden>
+            <span class="thanks-mark" aria-hidden="true"></span>
+            <h3>送信しました</h3>
+            <p>お問い合わせありがとうございます。<br>内容を確認のうえ、担当者よりご連絡いたします。</p>
+            <p class="sched">
+              お急ぎの場合は、こちらから打ち合わせの日程を直接ご予約いただけます。<br>
+              <a href="https://timerex.net/s/r_matsuoka/6666f3b5/" target="_blank" rel="noopener">日程を選んで予約する ↗</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="ft">
+  <div class="wrap">
+    <div class="ft-grid">
+      <div>
+        <h5>Green運用代行</h5>
+        <p>IT/Web業界特化のGreen媒体運用代行サービス。業界初の面談課金モデルで、リスクフリーの採用活動を実現します。<br>
+        運営：株式会社エージェントベスト</p>
+      </div>
+      <div>
+        <h5>コンテンツ</h5>
+        <ul>
+          <li><a href="#service">サービス概要</a></li>
+          <li><a href="#why">選ばれる理由</a></li>
+          <li><a href="#price">料金プラン</a></li>
+          <li><a href="#flow">支援の流れ</a></li>
+          <li><a href="#faq">よくある質問</a></li>
+          <li><a href="#contact">お問い合わせ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>関連サイト</h5>
+        <ul>
+          <li><a href="https://www.agent-best.net/" target="_blank" rel="noopener">エージェントベスト公式サイト ↗</a></li>
+          <li><a href="https://scout.agent-best.net/" target="_blank" rel="noopener">スカウト代行サービス ↗</a></li>
+          <li><a href="https://scoutdaikou-offerbox.agent-best.net/" target="_blank" rel="noopener">OfferBox運用代行 ↗</a></li>
+          <li><a href="https://infra.agent-best.net/" target="_blank" rel="noopener">Infra長期インターン採用代理店 ↗</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="ft-base">
+      株式会社エージェントベスト／東京都港区六本木四丁目8番地7号 六本木嶋田ビル5階<br>
+      有料職業紹介事業 許可番号 13-ユ-316964<br>
+      &copy; 株式会社エージェントベスト
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var els=document.querySelectorAll('.rv');
+  if(!('IntersectionObserver' in window)){Array.prototype.forEach.call(els,function(e){e.classList.add('in')});}
+  else{
+    var io=new IntersectionObserver(function(en){
+      en.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});
+    },{threshold:.12,rootMargin:'0px 0px -8% 0px'});
+    Array.prototype.forEach.call(els,function(e,i){e.style.transitionDelay=(Math.min(i%3,2)*70)+'ms';io.observe(e);});
+  }
+
+  // お問い合わせ：コーポレートサイト（agent-best.net/contact）と同一のGoogleフォームへ送信
+  var FORM_ACTION='https://docs.google.com/forms/d/e/1FAIpQLSd8Zk9Rxsg292K8R_ttnRYa5d4uXMBkSFrnlEVTFts6feRx6g/formResponse';
+  var ENTRY={company:'entry.1620407772',name:'entry.2140471957',email:'entry.417521654',message:'entry.1952858857'};
+  var SOURCE='Green運用代行LP（green.agent-best.net）';
+
+  var form=document.getElementById('contact-form'),
+      thanks=document.getElementById('thanks'),
+      errBox=document.getElementById('form-error'),
+      submitBtn=document.getElementById('submit-btn');
+  if(!form)return;
+
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    errBox.textContent='';
+    var get=function(id){return document.getElementById(id).value.trim();};
+    var company=get('company'),name=get('name'),email=get('email'),message=get('message');
+    if(!company||!name||!email||!message){errBox.textContent='すべての項目をご入力ください。';return;}
+    if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){errBox.textContent='メールアドレスの形式をご確認ください。';return;}
+
+    submitBtn.disabled=true;submitBtn.textContent='送信中...';
+    var data=new FormData();
+    data.append(ENTRY.company,company);
+    data.append(ENTRY.name,name);
+    data.append(ENTRY.email,email);
+    data.append(ENTRY.message,message+'\n\n---\nお問い合わせ元：'+SOURCE);
+
+    fetch(FORM_ACTION,{method:'POST',mode:'no-cors',body:data})
+      .then(function(){
+        form.hidden=true;thanks.hidden=false;
+        thanks.scrollIntoView({behavior:'smooth',block:'center'});
+      })
+      .catch(function(){
+        submitBtn.disabled=false;submitBtn.textContent='送信する';
+        errBox.textContent='送信に失敗しました。お手数ですが、時間をおいて再度お試しください。';
+      });
+  });
+})();
+</script>
 </body>
 </html>
