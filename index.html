@@ -167,6 +167,11 @@
   .step h4{font-size:1.08rem;font-weight:800;margin-bottom:6px}
   .step p{color:var(--ink-soft);font-size:.94rem}
   .step .tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+  .roles{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+  @media (max-width:900px){.roles{grid-template-columns:1fr}}
+  .roles .card h4{margin-bottom:10px}
+  .roles .tags{display:flex;flex-wrap:wrap;gap:8px}
+  .roles .tags span{font-size:.8rem;background:var(--surface-2);border:1px solid var(--line);border-radius:999px;padding:4px 12px;color:var(--ink-soft)}
   .step .tags span{font-size:.76rem;background:var(--surface-2);border:1px solid var(--line);border-radius:999px;padding:4px 12px;color:var(--ink-soft)}
 
   details.faq{background:var(--surface);border:1px solid var(--line);border-radius:12px;margin-bottom:10px;overflow:hidden}
@@ -282,6 +287,7 @@
       <a href="#why">選ばれる理由</a>
       <a href="#price">料金</a>
       <a href="#flow">導入の流れ</a>
+      <a href="#roles">対応職種</a>
       <a href="#faq">FAQ</a>
     </nav>
     <a href="#contact" class="btn btn-primary cta-mini">お問い合わせ</a>
@@ -633,17 +639,46 @@
     </div>
   </section>
 
-  <!-- FAQ -->
-  <section class="band" id="faq">
+  <!-- ROLES -->
+  <section class="band" id="roles">
     <div class="wrap">
       <div class="sec-head center rv">
-        <span class="kick">08 ・ よくある質問</span>
+        <span class="kick">08 ・ 対応職種</span>
+        <h2>エンジニアから、ビジネス職まで。</h2>
+        <p>Greenで募集できるIT・Web業界の職種を、職種ごとに求人票とスカウトの書き方を変えて運用します。</p>
+      </div>
+      <div class="roles">
+        <div class="card rv">
+          <h4>エンジニア</h4>
+          <div class="tags"><span>バックエンド</span><span>フロントエンド</span><span>インフラ・SRE</span><span>モバイル</span><span>データエンジニア</span><span>機械学習</span><span>QA</span><span>セキュリティ</span><span>社内SE</span><span>組込み・IoT</span></div>
+        </div>
+        <div class="card rv">
+          <h4>マネジメント・企画・デザイン</h4>
+          <div class="tags"><span>テックリード・CTO候補</span><span>エンジニアリングマネージャー</span><span>プロダクトマネージャー</span><span>プロジェクトマネージャー</span><span>UI/UXデザイナー</span><span>Webディレクター</span><span>データサイエンティスト</span></div>
+        </div>
+        <div class="card rv">
+          <h4>ビジネス職</h4>
+          <div class="tags"><span>SaaSの営業</span><span>インサイドセールス</span><span>カスタマーサクセス</span><span>マーケター</span><span>人事・採用</span><span>経理・労務</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq">
+    <div class="wrap">
+      <div class="sec-head center rv">
+        <span class="kick">09 ・ よくある質問</span>
         <h2>よくあるご質問。</h2>
       </div>
       <div style="max-width:820px;margin:0 auto" class="rv">
         <details class="faq">
           <summary><span class="q">Q</span>本当に初期費用・固定費はゼロですか？</summary>
           <div class="a">はい、ゼロです。採用した方が入社した場合のみ、1名あたり50万円（税別）をお支払いいただく成功報酬型です。入社に至らなければ費用は発生しません。</div>
+        </details>
+        <details class="faq">
+          <summary><span class="q">Q</span>人材紹介を使うのと何が違いますか？</summary>
+          <div class="a">人材紹介は紹介会社が持つ候補者の中から推薦を受ける形で、手数料は採用した方の年収に応じて決まるのが一般的です。Green運用代行は、貴社の求人としてGreenに掲載し、スカウトや「気になる」で候補者に直接アプローチします。費用は年収にかかわらず入社1名あたり50万円（税別）です。当社は人材紹介も行っているため、職種や時期によってはどちらが合うかもご相談いただけます。</div>
         </details>
         <details class="faq">
           <summary><span class="q">Q</span>契約期間の縛りはありますか？</summary>
@@ -678,30 +713,30 @@
   </section>
 
   <!-- ARTICLES -->
-  <section id="articles">
+  <section class="band" id="articles">
     <div class="wrap">
       <div class="sec-head rv">
-        <span class="kick">09 ・ 記事で読む</span>
+        <span class="kick">10 ・ 記事で読む</span>
         <h2>IT・Web採用のノウハウを、記事に。</h2>
-        <p>エンジニア採用の媒体の選び方、Greenとほかの媒体の使い分けなど。求人広告代理店の立場で書いています。</p>
+        <p>Greenの求人票・スカウトの書き方、職種ごとの採り方、成功報酬の仕組みと費用の比べ方。100本の記事にまとめています。</p>
       </div>
       <div class="arts">
-        <a class="art rv" href="https://saiyo-media.agent-best.net/media/hikaku-wantedly-green/" target="_blank" rel="noopener"><span class="c">媒体比較</span><b>WantedlyとGreenの違い｜共感で集めるか、求人で集めるか</b></a>
-        <a class="art rv" href="https://saiyo-media.agent-best.net/media/wt-heiyou-green/" target="_blank" rel="noopener"><span class="c">媒体比較</span><b>WantedlyとGreenの使い分け｜応募の場と読ませる場の分担</b></a>
-        <a class="art rv" href="https://saiyo-media.agent-best.net/media/hikaku-backend-erabikata/" target="_blank" rel="noopener"><span class="c">エンジニア採用</span><b>バックエンドエンジニアの採用媒体の選び方</b></a>
-        <a class="art rv" href="https://saiyo-media.agent-best.net/media/hikaku-infra-erabikata/" target="_blank" rel="noopener"><span class="c">エンジニア採用</span><b>インフラエンジニアの採用媒体の選び方</b></a>
-        <a class="art rv" href="https://saiyo-media.agent-best.net/media/kh-boshudan-chuuto/" target="_blank" rel="noopener"><span class="c">中途採用</span><b>中途採用の母集団形成｜募集ごとの入口</b></a>
-        <a class="art rv" href="https://saiyo-media.agent-best.net/media/hikaku-baitai-vs-daikou/" target="_blank" rel="noopener"><span class="c">運用代行</span><b>媒体を自社で運用するか代行に出すかの違い</b></a>
+        <a class="art rv" href="https://saiyo-media.agent-best.net/media/gr-seikou-houshu/" target="_blank" rel="noopener"><span class="c">費用</span><b>Green運用代行の成功報酬の仕組み｜入社時だけ費用が発生する形</b></a>
+        <a class="art rv" href="https://saiyo-media.agent-best.net/media/gr-vs-shoukai/" target="_blank" rel="noopener"><span class="c">費用</span><b>Green運用代行と人材紹介の費用の比べ方</b></a>
+        <a class="art rv" href="https://saiyo-media.agent-best.net/media/gr-kyujin-hyou/" target="_blank" rel="noopener"><span class="c">求人票</span><b>Greenの求人票の書き方｜エンジニアが最後まで読む順番</b></a>
+        <a class="art rv" href="https://saiyo-media.agent-best.net/media/gr-scout-bunmen/" target="_blank" rel="noopener"><span class="c">スカウト</span><b>Greenのスカウト文面｜IT職の候補者が返信する理由を書く</b></a>
+        <a class="art rv" href="https://saiyo-media.agent-best.net/media/gr-backend/" target="_blank" rel="noopener"><span class="c">職種別</span><b>Greenでバックエンドエンジニアを採る｜求人票とスカウトの要点</b></a>
+        <a class="art rv" href="https://saiyo-media.agent-best.net/media/gr-oubo-konai/" target="_blank" rel="noopener"><span class="c">課題別</span><b>Greenで応募が来ないときの見直し順｜求人票・条件・露出の切り分け</b></a>
       </div>
-      <p class="arts-more rv"><a href="https://saiyo-media.agent-best.net/media/" target="_blank" rel="noopener">採用メディアの記事をすべて見る ↗</a></p>
+      <p class="arts-more rv"><a href="https://saiyo-media.agent-best.net/media/green/" target="_blank" rel="noopener">Green・IT中途採用の記事をすべて見る ↗</a></p>
     </div>
   </section>
 
   <!-- REPRESENTATIVE -->
-  <section class="band" id="representative">
+  <section id="representative">
     <div class="wrap">
       <div class="sec-head center rv">
-        <span class="kick">10 ・ 代表紹介</span>
+        <span class="kick">11 ・ 代表紹介</span>
         <h2>運用の設計は、代表が直接見ています。</h2>
       </div>
       <div class="profile rv">
