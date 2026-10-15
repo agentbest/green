@@ -1,7 +1,7 @@
 # green — Green運用代行LP（採用企業向け・B2B）
 
 - 公開URL: https://green.agent-best.net/ （GitHub Pages）
-- サービス: **Green運用代行**。課金モデルは **1面談2万円の面談課金**（成果報酬ではなく面談ベース）。この料金表現を他のB2B LP（OfferBoxの完全成果報酬など）と混同しない。
+- サービス: **Green運用代行**。課金モデルは **成功報酬型・入社時1名50万円（税別）**（2026-10-16に面談課金から変更。初期費用・月額固定費ゼロ）。この料金表現を他のB2B LP（OfferBoxの完全成果報酬など）と混同しない。
 - アクセント色: グリーン `#12A150`
 - 読み手は**採用担当者**。求職者向けLPとはトーンも窓口ルールも別物。
 
@@ -14,7 +14,7 @@
 | ドメイン | リポジトリ | サービス | アクセント色 |
 |---|---|---|---|
 | scout.agent-best.net | agentbest/scout | スカウト代行（主要媒体全般） | インディゴ #4C4FD8 |
-| green.agent-best.net | agentbest/green | Green運用代行（1面談2万円の面談課金） | グリーン #12A150 |
+| green.agent-best.net | agentbest/green | Green運用代行（成功報酬・入社時1名50万円） | グリーン #12A150 |
 | infra.agent-best.net | agentbest/infra | Infra 長期インターン採用代理店 | アンバー #C2610C |
 | scoutdaikou-offerbox.agent-best.net | agentbest/scoutdaikou_offerbox | OfferBox運用代行 | ティール #0D7E93 |
 
